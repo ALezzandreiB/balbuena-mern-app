@@ -1,0 +1,130 @@
+nav {
+    background: linear-gradient(45deg, #B39DDB, #D1C4E9); /* Pastel purple gradient */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 15%;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(182, 169, 53, 0.1);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-right: 1.5rem;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin-left: 2rem;
+}
+
+ul li:first-child {
+    margin-left: 0;
+}
+
+
+ul li a.home,
+ul li a.about,
+ul li a.article {
+    color: #3E2723;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4e1d5e;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 2px;
+}
+
+ul li a.home:hover,
+ul li a.about:hover,
+ul li a.article:hover,
+ul li a.home:active,
+ul li a.about:active,
+ul li a.article:active {
+    color: #EFC5A7;
+    transform: scale(1.05);
+    border-bottom: 2px solid #EFC5A7;
+}
+
+ul li a:hover {
+    color: #3e2944;
+    transform: scale(1.1);
+    border-bottom: 2px solid rgb(87, 53, 107);
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    background-color:#a287d4;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 1rem;
+}
+
+button:hover {
+    background-color: #5d3777;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+    }
+}
